@@ -1,45 +1,18 @@
 import { useState } from "react";
 import "./App.css";
 
+import Component1 from "./components/Component1";
+import Component2 from "./components/Component2";
+
 function App() {
-  const [movies, setMovies] = useState([
-    {
-      id: 1,
-      title: "Blue Box",
-      rating: 10,
-    },
-    {
-      id: 2,
-      title: "Solo Leveling",
-      rating: 9,
-    },
-    {
-      id: 3,
-      title: "Kimi No Nawa", //this randomly popped in my mind.
-      rating: 7,
-    },
-  ]);
-
-  const changeName = () =>
-    setMovies(
-      movies.map((movie) =>
-        movie.title === "Kimi No Nawa" ? { ...movie, title: "Kimi" } : movie
-      )
-    );
-
-  console.log(movies[2]);
+  // We are defining our state inside our App component and we r sharing that state with the component1 and component2 by passing the state as the props
+  const [count, setCount] = useState(0);
 
   return (
     <>
-      <ul>
-        {movies.map((movie) => (
-          <li key={Math.random()}>
-            <h1>Title : {movie.title}</h1>
-            <p>Rating : {movie.rating}</p>
-          </li>
-        ))}
-        <button onClick={changeName}>Change Name</button>
-      </ul>
+      {/* We want to share our state to this components,for that we use props */}
+      <Component1 count={count} onClickHandler={() => setCount(count + 1)} />
+      <Component2 count={count} onClickHandler={() => setCount(count - 1)} />
     </>
   );
 }
