@@ -1,33 +1,33 @@
 import { useState, useEffect } from "react";
 
 function App() {
-  const [value, setValue] = useState(0);
+  const [data, setData] = useState([]);
 
-  // No dependency Array->The callback function  inside the useEffect will run every time our component re-renders.
-  // useEffect(() => {
-  //   console.log("call useEffect");
-  //   document.title = `Increment ${value}`;
-  // });
-
-  // Empty dependency Array->The callback function  inside the useEffect will run only once when our component renders for the first time i.e when our component is mounted
-  // useEffect(() => {
-  //   console.log("call useEffect");
-  //   document.title = `Increment ${value}`;
-  // }, []);
-
-  // some states in the dependency Array->The callback function  inside the useEffect will run every time any one of the states present in the dependency array changes.
   useEffect(() => {
-    console.log("call useEffect");
-    document.title = `Increment ${value}`;
-  }, [value]);
+    const fetchData = async () => {
+      const response = await fetch(
+        "https://jsonplaceholder.typicode.com/todos"
+      );
+      const data = await response.json();
 
-  // NOTE:
-  // Hooks cannot be wrapped within another function or condition.
+      if (!data) console.log("Something went wrong while fetching the data");
+
+      setData(data);
+    };
+    fetchData();
+  }, []);
 
   return (
     <>
-      <h2>Value: {value}</h2>
-      <button onClick={() => setValue(value + 1)}>Increment</button>
+      <ul>
+        {data.map((eachData) => (
+          <li key={eachData.id}>
+            <p>Todo {eachData.id}</p>
+            <p>{eachData.title}</p>
+            <p>Completed : {eachData.completed ? "true" : "false"}</p>
+          </li>
+        ))}
+      </ul>
     </>
   );
 }
