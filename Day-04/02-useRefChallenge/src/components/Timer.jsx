@@ -18,6 +18,8 @@ const Timer = () => {
 
     // the intervalRef.current has the id of setInterval when the component first renders.this id persists across re-renders we only need this id to implement the logic of stop timer.since the count is updating each second because of the setinterval we made during the first render the component re-renders every second
 
+    // In our case ([] dependency array), clearInterval(intervalRef.current) runs only when the component unmounts, ensuring the interval stops when the component is removed.
+
     return () => clearInterval(intervalRef.current);
   }, []);
 
