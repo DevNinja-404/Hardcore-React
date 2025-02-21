@@ -1,9 +1,16 @@
-import Form from "./components/Form";
+import ContactForm from "./components/ContactForm";
+import EventHandling from "./components/EventHandling";
+import FocusInput from "./components/FocusInput";
+// import Form from "./components/Form";
 
 const App = () => {
   return (
     <div>
-      <Form />
+      {/* <Form /> */}
+      {/* Challenges :  */}
+      <FocusInput />
+      <ContactForm />
+      <EventHandling />
     </div>
   );
 };
