@@ -2,13 +2,15 @@
 
 import { Suspense } from "react";
 import FetchTodo from "./components/FetchTodo";
+import Theme from "./components/Theme";
 
 // In certain situations,it can serve as a replacement for useEffect() when fetching data,and it streamlines context usage by allowing us to use use(context) instead of useContext(context)
 
 const App = () => {
   return (
     <Suspense fallback={<h1>Waiting for the todo...</h1>}>
-      <FetchTodo />
+      {/* <FetchTodo /> */}
+      <Theme />
     </Suspense>
   );
 };
