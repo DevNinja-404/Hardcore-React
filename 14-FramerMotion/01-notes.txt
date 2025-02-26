@@ -1,0 +1,37 @@
+Framer motion is a popular open-source library for React.js that allows developers to create animations and transitions easily.It provides a set of tools and APIs to animate components,enabling smooth,high performance animations with minimal effort.
+
+Difference between framer and framer motion:
+
+framer- It is a design tool that allows us to create high-fidelity prototypes and interactive desings.
+
+framer motion - It is a library specifically for React that enables developers to create smooth animations and transitions.
+
+Well we can also do these animations in pure css.Here are pros and cons of writing animations in pure css:
+
+ Pros:
+ - it is great for simple hover effects,transitions between states, or animations that don't require complex logic.
+ - css animations are typically very performant and can leverage GPU acceleration.
+ - no need to store any third party library so our bundle size remains smaller
+
+ Cons:
+ - more challenging to manage complex animations,such as coordinating multiple elements or responding to user interactions beyond simple events
+ - animating properties based on component state can be cumbersome.
+
+ Now lets talk about pros and cons of using framer motion:
+
+ Pros:
+ - offers advanced capabilities like drag,gestures,and layout animations,which can be hard to achieve with pure css.
+ - integrates seamlessly with React's component model allowing for easy management of state-driven animations.
+ - makes it easy to define and switch between different animation states.
+
+ Cons:
+ - might take some time to get familiar with its API.
+ - adds extra weight to our application compared to using CSS.
+
+ 
+
+
+
+
+
+
