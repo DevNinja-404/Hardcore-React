@@ -22,13 +22,15 @@ import { useState } from "react";
 
 import { variants } from "./variants";
 
+import FlippingCard from "./components/FlippingCard";
+
 const App = () => {
   const [isVisible, setIsVisible] = useState(true);
 
   return (
-    <div className="w-[100vw] h-[100vh] bg-black flex items-center justify-center">
-      <motion.div
-        className="w-40 h-40 bg-red-900 rounded-full "
+    <div className="w-[100vw] h-[100vh] bg-white/90 flex items-center justify-center">
+      {/* <motion.div
+        className="w-40 h-40 bg-red-900 rounded-full  "
         //
         // variants={{
         //   hidden: { opacity: 0, scale: 0.8 },
@@ -43,7 +45,9 @@ const App = () => {
         exit="exit"
         transition={{ duration: 2, ease: "easeInOut" }}
         onClick={() => setIsVisible(false)}
-      ></motion.div>
+      ></motion.div> */}
+
+      <FlippingCard />
     </div>
   );
 };
