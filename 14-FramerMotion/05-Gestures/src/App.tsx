@@ -2,8 +2,9 @@
 // Gestures allows us to add interactive animations based on user actions like dragging,hovering,tapping.It makes our components respond to how users interact with them.
 
 // import { motion } from "motion/react";
-import AnimatedCard from "./components/AnimatedCard";
-import AnimatedImageGallery from "./components/AnimatedImageGallery";
+// import AnimatedCard from "./components/AnimatedCard";
+// import AnimatedImageGallery from "./components/AnimatedImageGallery";
+import AnimatedShape from "./components/AnimatedShape";
 
 function App() {
   return (
@@ -30,7 +31,8 @@ function App() {
         transition={{ type: "spring", stiffness: 300, duration: 1, delay: 0.2 }}
       /> */}
       {/* <AnimatedCard /> */}
-      <AnimatedImageGallery />
+      {/* <AnimatedImageGallery /> */}
+      <AnimatedShape />
     </div>
   );
 }
