@@ -2,9 +2,11 @@
 // 1.Scroll Triggered Animation
 // 2.Scroll Driven Animation
 
-// import AnimatedCard from "./components/AnimatedCard";
-import ScrollAnimation from "./components/ScrollAnimation";
-import UseScroll from "./components/UseScroll";
+import AnimatedScroll from "./components/04-AnimatedScroll";
+
+// import AnimatedCard from "./components/01-AnimatedCard";
+// import ScrollAnimation from "./components/03-ScrollAnimation";
+// import UseScroll from "./components/02-UseScroll";
 
 // 1.Scroll Triggered Animation:These animations are triggered when the user scrolls to a specific point in the viewport.Once the scroll reaches that point,the animation plays.
 // Use Cases: They are great for revealing elements,changing styles,or starting animations at specific sections of a page.
@@ -31,7 +33,11 @@ const App = () => {
       </div> */}
       {/* <AnimatedCard /> */}
       {/* <UseScroll /> */}
-      <ScrollAnimation />
+      {/* <ScrollAnimation /> */}
+      <AnimatedScroll />
+      <div className="h-screen text-white flex justify-center items-center text-4xl">
+        So Cool!!!
+      </div>
     </div>
   );
 };
