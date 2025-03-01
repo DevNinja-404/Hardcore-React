@@ -54,18 +54,15 @@ const App = () => {
 
       const handleCatStop = setTimeout(() => {
         setIsCatStopped(true);
-        console.log("Cat like stop grne");
       }, 2000);
 
       const handleCatSpin = setTimeout(() => {
         setIsCatStopped(false);
         setDuration(0.5);
-        console.log("Cat like run grne");
       }, 3000);
 
       const handleCatSpinFast = setTimeout(() => {
         setDuration(0.2);
-        console.log("Cat like fast run grne");
         setAnimationKey((prev) => prev + 1);
       }, 28900);
 
