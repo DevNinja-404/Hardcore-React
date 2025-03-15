@@ -5,14 +5,18 @@
 // import PulsatingEffect from "./components/PulsatingEffect";
 
 // Challenge-03:
-import ColorChange from "./components/ColorChange";
+// import ColorChange from "./components/ColorChange";
+
+// Challenge-04:
+import SlidingText from "./components/SlidingText";
 
 const App = () => {
   return (
     <div className="w-[100vw] h-[100vh] flex justify-center items-center bg-slate-700">
       {/* <BouncingBall /> */}
       {/* <PulsatingEffect /> */}
-      <ColorChange />
+      {/* <ColorChange /> */}
+      <SlidingText />
     </div>
   );
 };
