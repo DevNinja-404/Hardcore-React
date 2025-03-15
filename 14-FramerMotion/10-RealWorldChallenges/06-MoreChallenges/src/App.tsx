@@ -11,7 +11,10 @@
 // import SlidingText from "./components/SlidingText";
 
 // Challenge:-05:
-import ZigZag from "./components/ZigZag";
+// import ZigZag from "./components/ZigZag";
+
+// Challenge:- 06:
+import WaveEffect from "./components/WaveEffect";
 
 const App = () => {
   return (
@@ -20,7 +23,8 @@ const App = () => {
       {/* <PulsatingEffect /> */}
       {/* <ColorChange /> */}
       {/* <SlidingText /> */}
-      <ZigZag />
+      {/* <ZigZag /> */}
+      <WaveEffect />
     </div>
   );
 };
