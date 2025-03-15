@@ -8,7 +8,10 @@
 // import ColorChange from "./components/ColorChange";
 
 // Challenge-04:
-import SlidingText from "./components/SlidingText";
+// import SlidingText from "./components/SlidingText";
+
+// Challenge:-05:
+import ZigZag from "./components/ZigZag";
 
 const App = () => {
   return (
@@ -16,7 +19,8 @@ const App = () => {
       {/* <BouncingBall /> */}
       {/* <PulsatingEffect /> */}
       {/* <ColorChange /> */}
-      <SlidingText />
+      {/* <SlidingText /> */}
+      <ZigZag />
     </div>
   );
 };
