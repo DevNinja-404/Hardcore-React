@@ -1,0 +1,1 @@
+- Zustand is a lightweight state management library for react applications.It helps us to manage and share state across different parts of our app without needing to pass props through many layers or use complex solutions like contextApi , useContext, or even reduxToolkit
