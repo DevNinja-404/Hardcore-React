@@ -1,0 +1,6 @@
+Redux is an open-source javaScript library for managing the state of an application in a predictable way.It is commony used with libraries like react for building user interfaces but can be used with any javaScript library or framework
+
+Redux Toolkit is the official opinionated,batteries-included toolset for efficient Redux development
+
+Redux makes the state management easy
+Redux Toolkit makes redux easy to work with
